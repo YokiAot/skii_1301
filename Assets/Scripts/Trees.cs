@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Trees : MonoBehaviour
@@ -26,6 +27,15 @@ public class Trees : MonoBehaviour
             return;
 
             player.HP -= 15;
+
+            UIMenager.Instance.ShowNotiText($"Hurt -15\nHP : {player.HP}");
+
+            if (player.HP <= 0 )
+            {
+                //Console.WriteLine(" You Die ");
+                player.HP = 0;
+                UIMenager.Instance.ShowNotiText($"You Die!\nYour HP is {player.HP}");
+            }
         }
     }
     private void OnCollisionExit(Collision collision)
