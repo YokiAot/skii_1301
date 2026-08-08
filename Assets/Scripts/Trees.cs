@@ -32,14 +32,15 @@ public class Trees : MonoBehaviour
 
             if (player.HP <= 0 )
             {
-                //Console.WriteLine(" You Die ");
                 player.HP = 0;
                 UIMenager.Instance.ShowNotiText($"You Die!\nYour HP is {player.HP}");
+                Time.timeScale = 0f;
+                UIMenager.Instance.ShowHideRestartBotton(true);
             }
         }
     }
     private void OnCollisionExit(Collision collision)
     {
-        rd.material.color = new Color(166, 114, 114);
+        rd.material.color = new Color(166, 114, 114, 255);
     }
 }

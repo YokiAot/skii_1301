@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     private InputAction moveAction;
     private Vector2 moveValue;
 
+    [SerializeField]
     private int point;
     public int Point {  get { return point; } set { point = value; } }
 
