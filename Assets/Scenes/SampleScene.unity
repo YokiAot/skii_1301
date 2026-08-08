@@ -1332,7 +1332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   forcePower: 5
-  rb: {fileID: 656264570}
+  rb: {fileID: 0}
   point: 0
   hp: 55
 --- !u!1001 &678621989
