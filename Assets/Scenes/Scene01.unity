@@ -698,6 +698,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 396631248}
+  - component: {fileID: 396631249}
   m_Layer: 0
   m_Name: Flags
   m_TagString: Untagged
@@ -730,6 +731,18 @@ Transform:
   - {fileID: 1484581816}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &396631249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396631247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a08b398e0443c849974f8ed4d0b19d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Flag
 --- !u!4 &396828775 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3848747918600017334, guid: 7ad1865fac6214b4a93986434a63e2a8, type: 3}
@@ -1334,7 +1347,7 @@ MonoBehaviour:
   forcePower: 5
   rb: {fileID: 0}
   point: 0
-  hp: 55
+  hp: 100
 --- !u!1001 &678621989
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2618,7 +2631,6 @@ GameObject:
   - component: {fileID: 1468589372}
   - component: {fileID: 1468589371}
   - component: {fileID: 1468589370}
-  - component: {fileID: 1468589369}
   - component: {fileID: 1468589368}
   m_Layer: 0
   m_Name: Finish
@@ -2628,18 +2640,6 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &1468589368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1468589367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0a4430c7ae7798438b195e56e6b8115, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Finish
---- !u!114 &1468589369
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

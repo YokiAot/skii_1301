@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
     
     void Update()
     {
-        
+        MoveLeftOrRight();
     }
 
     private void MoveLeftOrRight()
