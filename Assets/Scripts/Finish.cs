@@ -3,7 +3,10 @@ using UnityEngine;
 public class Finish : MonoBehaviour
 {
 
+    [SerializeField]
+    private GameObject gameOverScreen;
 
+    public static Finish Instance;
 
     void Start()
     {
@@ -23,5 +26,11 @@ public class Finish : MonoBehaviour
             return;
 
         UIMenager.Instance.ShowNotiText($"You Win!\nPoint : {p.Point}");
+    }
+
+    public void ShowHideGameOverScreen(bool flag)
+    {
+        gameOverScreen.SetActive(flag);
+        return;
     }
 }

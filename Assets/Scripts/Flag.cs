@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Flag : MonoBehaviour
 {
@@ -14,5 +15,14 @@ public class Flag : MonoBehaviour
             UIMenager.Instance.ShowNotiText($"+10 points\nPoints : {player.Point}");
             Destroy(gameObject);
         }
+    }
+
+    void Start()
+    {
+        
+    }
+    void Update()
+    {
+        
     }
 }

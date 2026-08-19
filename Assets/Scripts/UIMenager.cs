@@ -19,16 +19,6 @@ public class UIMenager : MonoBehaviour
         Instance = this;
     }
 
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
-
     public void ShowNotiText(string s)
     {
         notiText.text = s;
@@ -46,5 +36,11 @@ public class UIMenager : MonoBehaviour
     public void ShowHideRestartBotton(bool flag)
     {
         restartBotton.SetActive(flag);
+    }
+
+    public void Exit()
+    {
+        ShowHideRestartBotton(false);
+        Application.Quit();
     }
 }
