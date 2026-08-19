@@ -15,11 +15,13 @@ public class Player : MonoBehaviour
 
     [SerializeField]
     private int point;
-    public int Point {  get { return point; } set { point = value; } }
+    public int Point 
+    {  get { return point; } set { point = value; } }
 
     [SerializeField]
     private int hp;
-    public int HP { get { return hp; } set { hp = value; } }
+    public int Hp
+    { get { return hp; } set { hp = value; } }
     
     void Start()
     {
